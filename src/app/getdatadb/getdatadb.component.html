@@ -1,0 +1,19 @@
+<h1>Available Millets</h1>
+<table class="table table-bordered">
+    <tr>
+        <th>First Name</th>
+        <th>Last Name</th>
+        <th>Email</th>
+        <th> Gender </th>
+        <th> Actions </th>
+    </tr>
+    <tr *ngFor="let row of userData">
+        <td>{{row.firstname}}</td>
+        <td>{{row.lastname}}</td>
+        <td>{{row.email}}</td>
+        <td>{{row.gender}}</td>
+
+        <td><input type="button" value="Add to List" class="btn btn-primary">
+            <input type="button" value="delete" class="btn btn-primary"></td>
+    </tr>
+</table>

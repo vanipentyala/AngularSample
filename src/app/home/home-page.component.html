@@ -1,0 +1,63 @@
+<p>
+    <b>Millets</b> - Millets or Siruthaniyam varieties are all about today post. I use millets for a long time though not all the millets that I am going to talk about today but 3-4 millets are very regular and I always keep stock, about that I will talk
+    later in that post. Millets are not very popular other than Bajra, Jowar and Ragi and in all the millets Bajra (Pearl Millet) is most popular. Now a days millets are again gaining it's movement and people bringing more aware of it and today we going
+    to learn about few millets which we can include in our diet, there are plenty of other millets too which hopefully I can cover some time soon.
+</p>
+
+
+<table class="table table-bordered ">
+    <thead>
+        <tr>
+            <th>MilletName</th>
+            <th>Fiber</th>
+            <th>Iron</th>
+            <th>Calicum</th>
+            <th>Minerals</th>
+            <th>Protein</th>
+            <th *ngIf="showdetails">water</th>
+
+        </tr>
+    </thead>
+    <tbody>
+        <tr *ngFor="let milletdata of MilletDtaInfo">
+            <td>
+                <tr>
+                    {{milletdata.MilletName}}
+                </tr>
+            </td>
+            <td>
+                <tr>
+                    {{milletdata.Fiber}}
+                </tr>
+            </td>
+            <td>
+                <tr>
+                    {{milletdata.Iron}}
+                </tr>
+            </td>
+
+            <td>
+                <tr>
+                    {{milletdata.Calicum}}
+                </tr>
+            </td>
+            <td>
+                <tr>
+                    {{milletdata.Minerals}}
+                </tr>
+            </td>
+            <td>
+                <tr>
+                    {{milletdata.Protein}}
+                </tr>
+            </td>
+            <td *ngIf="showdetails">
+                <tr>
+                    {{milletdata.water}}
+                </tr>
+            </td>
+
+        </tr>
+    </tbody>
+</table>
+<!--button (click)="moreMillets()">{{showdetails?'hide':'show'}}moremillets</button>-->
