@@ -9,7 +9,8 @@ export class GetdatadbComponent implements OnInit {
 public userData;
   getData()
   {
-    this.httpclient.get('http://localhost:3000/customers_data').subscribe(data => {
+    this.httpclient.get('http://localhost:3000/customers_data').subscribe(data =>
+     {
       console.log(data);
       this.userData=data;
     });
